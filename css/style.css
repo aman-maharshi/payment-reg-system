@@ -1,0 +1,505 @@
+body {
+	margin: 0;
+	height: 100%;
+	text-align: center;
+	font-family: sans-serif;
+}
+header {
+	padding: 20px 0;
+	background: #bae8e4; 
+	background: linear-gradient(45deg,#a9fbf3 25%, #8dbbe2);
+}
+.title {
+	font-size: 30px;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+.title-short {
+	font-size: 24px;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+.sub-title {
+	font-size: 25px;	
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.main-title {
+	color: purple;
+	font-size: 30px;
+	font-weight: 500;
+}
+.main-title-short {
+	font-size: 24px;
+	color: purple;
+	font-weight: 500;
+}
+.main-title-xs {
+	text-align: center;
+	font-size: 24px;
+	color: purple;
+	font-weight: 500;
+}
+.form-box {
+	width: 400px;
+	padding: 25px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 10px;
+	margin: 60px auto;
+	position: relative;
+	border: 2px solid #dadada;
+}
+.form-row {
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+.form-row input {
+	width: 200px;
+	padding: 5px;
+	height: 35px;
+	border: none;
+}
+.reset-pass {
+	margin-left: 160px;
+	font-size: 14px;
+}
+ul {
+	list-style: none;
+	text-align: left;
+	background: #e5e5e5;
+	border-radius: 10px;
+	width: 500px;
+	margin: 50px auto;
+	padding: 1rem;
+	border: 2px solid #dadada;
+}
+li {
+	font-size: 17px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+ul a:hover {
+	color: purple;
+}
+#warning {
+	color: #e23434;
+	font-size: 14px;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	display: none;
+}
+#warning-new-pass {
+	color: #e23434;
+	font-size: 14px;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	display: none;
+}
+#message {
+	padding: 5px;
+	background: #f7f782;
+	color: #167d1e;
+	border-radius: 10px;
+	max-width: 200px;
+	position: absolute;
+	right: 10px;
+	top: -12px
+	
+}
+#message-two {
+	padding: 5px;
+	background: #f7f782;
+	color: #167d1e;
+	border-radius: 10px;
+	max-width: 200px;
+	position: absolute;
+	right: 10px;
+	top: 22px;
+}
+#message-three {
+	padding: 5px;
+	background: #f7f782;
+	color: #167d1e;
+	border-radius: 10px;
+	max-width: 200px;
+	position: absolute;
+	right: 10px;
+	top: 55px;
+}
+nav {
+	padding: 10px;
+	background: #2c3e50;
+	display: flex;
+	justify-content: space-between;
+}
+nav a {
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+/*
+	BUTTONS
+------------------*/
+.home-btn {
+	margin-left: 20px;
+}
+.logout-btn {
+	margin-right: 20px;
+}
+.btn {
+	padding: 7px 14px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	background: #bae8e4;
+	color: #151556;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px gray;
+}
+.btn a {
+	text-decoration: none;
+	color: black;
+}
+.btn:hover {
+	background: #8befe6;
+}
+#refresh-btn {
+	background: #d6e4fe;
+	margin-right: 7px;
+	margin-top: 1rem;
+}
+#save-draft-btn {
+	background: #e4e4e4;
+	margin-right: 7px;
+	margin-top: 1rem;
+}
+#clear-draft-btn {
+	background: #e4e4e4;
+	margin-right: 7px;
+	margin-top: 1rem;
+}
+
+/*
+	HEADER
+----------------------*/
+header {
+	display: flex;
+}
+.header-left {
+	flex: 1;
+}
+.header-left img {
+	display: block;
+	margin-left: auto;
+	margin-right: 2rem;
+	/* width: 27%; */
+	width: 90px;
+}
+.header-left-short img {
+	display: block;
+	margin-left: auto;
+	margin-right: 2rem;
+	width: 48px;
+	margin-left: 180px;
+}
+.header-right {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+.header-right-short {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+/*
+	OPTIONS
+----------------*/
+.options-list  li {
+	margin-bottom: 20px;
+}
+.options-list  a {
+	font-size: 18px;
+	color: #295eaf;
+}
+
+/*
+	NEW TS & INDENT REGISTRATION
+------------------------------------------*/
+main {
+	display: flex;
+}
+.ts-main {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+}
+.col-left {
+	flex: 3;
+}
+.col-right {
+	flex: 2;
+	color: #151556;
+	font-weight: 600;
+	padding: 10px;
+	position: relative;
+	top: -30px;
+}
+.col-left-row {
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 35px;
+}
+.col-left-row label {
+	margin-right: 5px;
+}
+.usi-title {
+	margin-bottom: 5px;
+	font-weight: 600;
+	margin-right: 20px;
+	padding-top: 5px;
+}
+.usi-select-box {
+	display: flex;
+}
+.usi-row {
+	text-align: left;
+	margin-bottom: 15px;
+}
+.usi-value {
+	color: #2c3e50;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.ind-main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+.work-desc {
+	width: 250px;
+	height: 80px;
+}
+.ts-reg-form {
+	margin-top: 1rem;
+}
+
+/*
+	USI AND BCN DISPLAY SECTIONS
+------------------------------------*/
+.bcn-details, .usi-details {
+	padding: 10px;
+	border-radius: 10px;
+}
+.bcn-details {
+	/*background: #f6d9c7;*/
+	background: #bae8e4;
+}
+.usi-details {
+	/*background: #94dcc4;*/
+	background: #f3b4b4;
+	background: #f3b4b4ab;
+	margin-bottom: 1rem;
+}
+.reg-id-number {
+	padding-left: 10px;
+}
+
+/*
+	VIEW RECORDS - TABLE
+-------------------------------*/
+table {
+	border: 1px solid lightgray;
+}
+thead {
+	border-bottom: 1px solid lightgray;
+}
+.view-padding {
+	max-width: 95%;
+}
+.table-section {
+	margin: 1rem auto;
+	overflow-x: scroll;
+	height: 475px;
+	height: 75vh;
+}
+.display-table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.display-table th {
+	color: #151556;
+	background: #7eaafd52;
+	padding: 10px 5px;
+}
+.edit-table th {
+	padding: 15px 5px;
+}
+.display-table td {
+	padding-left: 15px;
+	border: 1px dotted #dcdcdc;
+}
+.edit-table td {
+	border: none;
+}
+.display-table tr:nth-child(even) {
+	background: #f1f1f1;
+}
+footer {
+	font-style: italic;
+	font-size: 0.9rem;
+	margin-top: 1rem;
+}
+.input-xxs-view {
+	min-width: 50px;
+	height: 26px;
+	padding: 7px 0;
+}
+.input-xs-view {
+	min-width: 100px;
+	height: 26px;
+	padding: 7px 0;
+}
+.input-sm-view {
+	min-width: 150px;
+	height: 26px;
+	padding: 7px 0;
+}
+.input-md-view {
+	min-width: 120px;
+	height: 26px;
+	padding: 7px 0;
+}
+.input-lg-view {
+	min-width: 300px;
+	height: 26px;
+	padding: 7px 0;
+}
+
+/*
+	EDIT RECORDS - TABLE
+------------------------------*/
+.input-xs {
+	width: 90px;
+	height: 26px;
+	padding-left: 5px;
+}
+.input-sm {
+	width: 140px;
+	height: 26px;
+	padding-left: 5px;
+}
+.input-md {
+	width: 250px;
+	height: 26px;
+	padding-left: 5px;
+}
+.input-lg {
+	width: 350px;
+	height: 26px;
+	padding-left: 5px;
+}
+.btn-edit, .btn-del {
+	margin: 10px;
+	padding: 7px 14px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	background: #bae8e4;
+	color: #151556;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px gray;
+}
+.btn-edit:hover {
+	background: #8befe6;
+}
+.btn-del {
+	background: #da5b5b;
+}
+.btn-del:hover {
+	background: #d23939;
+}
+.row-warning {
+	color: red;
+	font-size: 18px;
+	position: absolute;
+	left: 45%;
+	top: 31.5%;
+}
+
+/*
+	CHANGE PASSWORD
+-------------------------*/
+/*
+	Application Version: 2.4 
+	Backend Version: phpMyAdmin 2.7.0-beta1, PHP Version 5.4.16
+	Developer: Aman Maharshi
+	Contact: http://www.amanmaharshi.com
+	Last Implemented Functionality: Payment Module
+	Last Updated: 21 Feb 2020
+*/
+#new-pass {
+	margin-left: 25px;
+}
+#current-pass {
+	margin-left: 5px;
+}
+#passwordChangeStatus {
+	padding: 5px;
+	background: #f7f782;
+	color: #167d1e;
+	border-radius: 10px;
+	max-width: 200px;
+	position: absolute;
+	right: 20px;
+	top: 50px;
+}
+.btn-abs-top {
+	position: absolute;
+	top: 10px;
+	right: 50px;
+}
+.btn-abs-top a {
+	text-decoration: none;
+}
+.display_un {
+	position: absolute;
+	left: 30px;
+	top: 165px;
+	color: #363791;
+	font-weight: bold;
+}
+#browser-check {
+	color: red;
+	position: absolute;
+	left: 30%;
+	top: 25%;
+	font-family: consolas;
+	font-size: 20px;
+	font-weight: bold;
+}
+#payments {
+	position: absolute; 
+	right: 50px; 
+	top: 160px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #295eaf;
+}
